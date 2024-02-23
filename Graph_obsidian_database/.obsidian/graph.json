@@ -1,0 +1,58 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:tagat",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:tdata",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:tklient",
+      "color": {
+        "a": 1,
+        "rgb": 65535
+      }
+    },
+    {
+      "query": "path:twialon",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    },
+    {
+      "query": "path:temail",
+      "color": {
+        "a": 1,
+        "rgb": 16711935
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": -2.3,
+  "nodeSizeMultiplier": 2.45465781481743,
+  "lineSizeMultiplier": 3.64859806483509,
+  "collapse-forces": false,
+  "centerStrength": 0.633943075075923,
+  "repelStrength": 20,
+  "linkStrength": 0.976905148668691,
+  "linkDistance": 190,
+  "scale": 0.32132775893488524,
+  "close": false
+}

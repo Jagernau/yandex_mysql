@@ -1,0 +1,2 @@
+ "pk клиента", PrimaryKey
+ #tklient 
