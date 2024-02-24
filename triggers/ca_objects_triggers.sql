@@ -149,6 +149,42 @@ BEGIN
                 NEW.imei
             );
     END IF;
+    IF NEW.parent_id_sys <> OLD.parent_id_sys THEN
+        Insert into log_changes(
+            changes_table, 
+            changes_action, 
+            obj_key, 
+            changes_column,
+            old_val, 
+            new_val
+        ) 
+            VALUES (
+                'ca_objects',
+                2,
+                OLD.id, 
+                'parent_id_sys',
+                OLD.parent_id_sys,
+                NEW.parent_id_sys
+            );
+    END IF;
+    IF NEW.contragent_id <> OLD.contragent_id THEN
+        Insert into log_changes(
+            changes_table, 
+            changes_action, 
+            obj_key, 
+            changes_column,
+            old_val, 
+            new_val
+        ) 
+            VALUES (
+                'ca_objects',
+                2,
+                OLD.id, 
+                'contragent_id',
+                OLD.contragent_id,
+                NEW.contragent_id
+            );
+    END IF;
 END$$
 DELIMITER ;
 
