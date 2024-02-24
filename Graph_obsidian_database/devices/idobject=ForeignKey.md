@@ -1,2 +1,0 @@
-[[idobject=Char]]
-#tagat 
