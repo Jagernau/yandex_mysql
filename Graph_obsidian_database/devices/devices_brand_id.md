@@ -1,4 +1,4 @@
 [[devices_brands/id]]
 #devices
-ТИП: #int
+ТИП: int
 ОПИСАНИЕ: Связь по devices_brands.id

@@ -1,2 +1,2 @@
 #devices
-ТИП: #int #pk #ai
+ТИП: int pk ai

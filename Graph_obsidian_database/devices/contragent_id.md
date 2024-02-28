@@ -1,4 +1,4 @@
 [[Contragents/ca_id]]
 #devices
-ТИП: #int
-ОПИСАНИЕ: Связь с Contragents.ca_id
+ТИП: int
+ОПИСАНИЕ: Связь с клиентом по Contragents.ca_id

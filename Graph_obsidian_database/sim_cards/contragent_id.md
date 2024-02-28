@@ -1,4 +1,4 @@
 [[Contragents/ca_id]]
 #sim_cards
-ТИП: #int
+ТИП: int
 ОПИСАНИЕ: Связь по Contragents.ca_id

@@ -1,2 +1,0 @@
-[[tdata/login=Char]]
-#twialon 

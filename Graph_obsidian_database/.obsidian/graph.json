@@ -1,5 +1,5 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": true,
   "showAttachments": false,
@@ -8,42 +8,42 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:tagat",
+      "query": "path:sim_cards",
       "color": {
         "a": 1,
         "rgb": 14701138
       }
     },
     {
-      "query": "path:tdata",
+      "query": "path:devices_brands",
       "color": {
         "a": 1,
         "rgb": 14725458
       }
     },
     {
-      "query": "path:tklient",
+      "query": "path:devices",
       "color": {
         "a": 1,
-        "rgb": 65535
+        "rgb": 11657298
       }
     },
     {
-      "query": "path:twialon",
+      "query": "path:devices_vendor",
       "color": {
         "a": 1,
         "rgb": 5431378
       }
     },
     {
-      "query": "path:temail",
+      "query": "path:ca_objects",
       "color": {
         "a": 1,
-        "rgb": 16711935
+        "rgb": 5431473
       }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": true,
   "textFadeMultiplier": -2.3,
   "nodeSizeMultiplier": 2.45465781481743,
@@ -53,6 +53,6 @@
   "repelStrength": 20,
   "linkStrength": 0.976905148668691,
   "linkDistance": 190,
-  "scale": 0.32132775893488524,
-  "close": false
+  "scale": 0.24852869762487806,
+  "close": true
 }

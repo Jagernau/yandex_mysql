@@ -1,4 +1,4 @@
-[[/]]
+[[imei]]
 #devices
-ТИП: #varchar
+ТИП: varchar
 ОПИСАНИЕ: IMEI терминала

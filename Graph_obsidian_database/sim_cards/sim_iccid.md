@@ -1,3 +1,3 @@
 #sim_cards
-ТИП: #varchar
+ТИП: varchar
 ОПИСАНИЕ: ICCID сим карты.

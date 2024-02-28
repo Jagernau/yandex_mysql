@@ -1,2 +1,0 @@
-[[tklient/id=Int]]
-#twialon 

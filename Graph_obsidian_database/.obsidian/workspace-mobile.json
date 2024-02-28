@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "fb89af515d563292",
+        "id": "8478d969d5cecd3e",
         "type": "tabs",
         "children": [
           {
-            "id": "e1e0ca32a5bdc979",
+            "id": "d88893e5c554c8ca",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "twialon/logintd=ForeignKey.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -44,7 +40,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "tag:#tagat",
+            "query": "tag:#Последнее",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -93,7 +89,6 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "twialon/logintd=ForeignKey.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -110,7 +105,6 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "twialon/logintd=ForeignKey.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -121,9 +115,7 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {
-            "file": "twialon/logintd=ForeignKey.md"
-          }
+          "state": {}
         }
       },
       {
@@ -163,30 +155,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e1e0ca32a5bdc979",
+  "active": "d88893e5c554c8ca",
   "lastOpenFiles": [
+    "devices/device_imei.md",
+    "ca_objects/id.md",
+    "devices/imei.md",
+    "ca_objects/object_last_message.md",
+    "ca_objects/client_name.md",
+    "Contragents/ca_id.md",
+    "Contragents",
+    "sim_cards/client_name.md",
+    "sim_cards/ca_uid.md",
+    "devices/name_it.md",
+    "devices/client_name.md",
+    "ca_objects/ca_uid.md",
+    "devices_vendor/id.md",
+    "sim_cards/sim_device_id.md",
+    "Untitled.canvas",
+    "ca_objects/parent_id_sys.md",
     "devices/device_id.md",
     "devices/device_serial.md",
     "twialon/logintd=ForeignKey.md",
     "twialon/id=Int.md",
     "tagat/dbeg=Dtime.md",
-    "Untitled.canvas",
     "temail/kpp=ForeignKey.md",
     "tagat/idobject=ForeignKey.md",
     "tklient/name=Char.md",
     "tklient/shortname=Char.md",
     "tklient/inn=Char.md",
     "tdata/login=Char.md",
-    "tdata/idlogin=Char.md",
-    "twialon/klient=Char.md",
-    "Untitled.md",
-    "tdata/idsystem=Int.md",
-    "tdata/idobject=Char.md",
-    "twialon/tkid=ForeignKey.md",
-    "tagat/dend=Dtime.md",
-    "twialon/login=Char.md",
-    "tagat/shortname=Char.md",
-    "tagat/name = char.md",
-    "temail/name=Char.md"
+    "tdata/idlogin=Char.md"
   ]
 }

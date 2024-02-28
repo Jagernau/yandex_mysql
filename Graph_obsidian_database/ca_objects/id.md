@@ -1,2 +1,2 @@
-#sim_cards
+#ca_objects
 ТИП: int pk ai
