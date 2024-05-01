@@ -227,3 +227,65 @@ BEGIN
     END IF;
 END$$
 DELIMITER ;
+
+
+
+-----Тригер вытаскивания госномера при insert и updateпо типу А123БВ123  ca_objects и пемещение в таблицу object_vehicles
+
+DELIMITER $$
+CREATE TRIGGER trg_insert_ca_objects_gos_nomer_2
+AFTER INSERT ON ca_objects
+FOR EACH ROW
+BEGIN
+    IF NEW.object_name REGEXP '.*[A-Za-zА-Яа-я][0-9]{3}[A-Za-zА-Яа-я]{2}[0-9]{3}.*'
+        AND NEW.contragent_id IS NOT NULL 
+        AND NOT EXISTS (
+            SELECT vehicle_gos_nomer FROM object_vehicles
+            WHERE UPPER(vehicle_gos_nomer) = UPPER(REGEXP_SUBSTR(NEW.object_name, '[A-Za-zА-Яа-я][0-9]{3}[A-Za-zА-Яа-я]{2}[0-9]{3}')))
+    THEN
+        INSERT IGNORE INTO object_vehicles(vehicle_gos_nomer, vehicle_ca_id) 
+        VALUES (UPPER(REGEXP_SUBSTR(NEW.object_name, '[A-Za-zА-Яа-я][0-9]{3}[A-Za-zА-Яа-я]{2}[0-9]{3}')), NEW.contragent_id);
+    END IF;
+END$$
+DELIMITER ;
+
+
+
+-----Тригер вытаскивания госномера при insert и updateпо типу 1234БВ123  ca_objects и пемещение в таблицу object_vehicles
+
+DELIMITER $$
+CREATE TRIGGER trg_insert_ca_objects_gos_nomer_3
+AFTER INSERT ON ca_objects
+FOR EACH ROW
+BEGIN
+    IF NEW.object_name REGEXP '.*[0-9]{4}[A-Za-zА-Яа-я]{2}[0-9]{3}.*'
+        AND NEW.contragent_id IS NOT NULL 
+        AND NOT EXISTS (
+            SELECT vehicle_gos_nomer FROM object_vehicles
+            WHERE UPPER(vehicle_gos_nomer) = UPPER(REGEXP_SUBSTR(NEW.object_name, '[0-9]{4}[A-Za-zА-Яа-я]{2}[0-9]{3}')))
+    THEN
+        INSERT IGNORE INTO object_vehicles(vehicle_gos_nomer, vehicle_ca_id) 
+        VALUES (UPPER(REGEXP_SUBSTR(NEW.object_name, '[0-9]{4}[A-Za-zА-Яа-я]{2}[0-9]{3}')), NEW.contragent_id);
+    END IF;
+END$$
+DELIMITER ;
+
+
+-----Тригер вытаскивания госномера при insert и updateпо типу 1234БВ12  ca_objects и пемещение в таблицу object_vehicles
+
+DELIMITER $$
+CREATE TRIGGER trg_insert_ca_objects_gos_nomer_4
+AFTER INSERT ON ca_objects
+FOR EACH ROW
+BEGIN
+    IF NEW.object_name REGEXP '.*[0-9]{4}[A-Za-zА-Яа-я]{2}[0-9]{2}.*'
+        AND NEW.contragent_id IS NOT NULL 
+        AND NOT EXISTS (
+            SELECT vehicle_gos_nomer FROM object_vehicles
+            WHERE UPPER(vehicle_gos_nomer) = UPPER(REGEXP_SUBSTR(NEW.object_name, '[0-9]{4}[A-Za-zА-Яа-я]{2}[0-9]{2}')))
+    THEN
+        INSERT IGNORE INTO object_vehicles(vehicle_gos_nomer, vehicle_ca_id) 
+        VALUES (UPPER(REGEXP_SUBSTR(NEW.object_name, '[0-9]{4}[A-Za-zА-Яа-я]{2}[0-9]{2}')), NEW.contragent_id);
+    END IF;
+END$$
+DELIMITER ;
