@@ -216,7 +216,7 @@ CREATE TRIGGER trg_insert_ca_objects_gos_nomer_1
 AFTER INSERT ON ca_objects
 FOR EACH ROW
 BEGIN
-    IF NEW.object_name REGEXP '.*[A-Za-zА-Яа-я][0-9]{3}[A-Za-zА-Яа-я]{2}[0-9]{2}.*'
+    IF NEW.object_name REGEXP '.*[A-Za-zА-Яа-я][0-9]{3}[A-Za-zА-Яа-я]{2}[0-9]{2}[^0-9].*|.*[A-Za-zА-Яа-я][0-9]{3}[A-Za-zА-Яа-я]{2}[0-9]{2}$|.*[A-Za-zА-Яа-я][0-9]{3}[A-Za-zА-Яа-я]{2}[0-9]{2}[^0-9]$'
         AND NEW.contragent_id IS NOT NULL 
         AND NOT EXISTS (
             SELECT vehicle_gos_nomer FROM object_vehicles
@@ -278,7 +278,7 @@ CREATE TRIGGER trg_insert_ca_objects_gos_nomer_4
 AFTER INSERT ON ca_objects
 FOR EACH ROW
 BEGIN
-    IF NEW.object_name REGEXP '.*[0-9]{4}[A-Za-zА-Яа-я]{2}[0-9]{2}.*'
+    IF NEW.object_name REGEXP '.*[0-9]{4}[A-Za-zА-Яа-я]{2}[0-9]{2}[^0-9].*|.*[0-9]{4}[A-Za-zА-Яа-я]{2}[0-9]{2}$|.*[0-9]{4}[A-Za-zА-Яа-я]{2}[0-9]{2}[^0-9]$'
         AND NEW.contragent_id IS NOT NULL 
         AND NOT EXISTS (
             SELECT vehicle_gos_nomer FROM object_vehicles
